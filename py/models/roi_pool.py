@@ -15,6 +15,7 @@ class ROI_Pool(nn.Module):
     def __init__(self, size):
         super(ROI_Pool, self).__init__()
         assert len(size) == 2, 'size参数输入(长, 宽)'
+        # 提供2维的自适应最大池化操作: 对于任何输入大小的输入，可以将输出尺寸指定为H*W
         pool_func = nn.AdaptiveMaxPool2d
 
         self.roi_pool = pool_func(size)

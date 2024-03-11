@@ -16,7 +16,7 @@ from utils.util import check_dir
 suffix_xml = '.xml'
 suffix_jpeg = '.jpg'
 
-car_train_path = '../../data/VOCdevkit/VOC2007/ImageSets/Main/car_train.txt'
+car_train_path = '../../data/VOCdevkit/VOC2007/ImageSets/Main/car_train.txt' # 存放的是文件名, 一行一个
 car_val_path = '../../data/VOCdevkit/VOC2007/ImageSets/Main/car_val.txt'
 
 voc_annotation_dir = '../../data/VOCdevkit/VOC2007/Annotations/'
